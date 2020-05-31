@@ -2,11 +2,7 @@
 //вещественное число.
 //
 
-let a = 3;
-let b = 7;
-let c = 3;
-let d = 1;
-
+const findCrossPoint = (a,b,c,d)=>{
 //раскрытие дискриминантов в зависимости от знаков модулей
 //|x| +, outside +
 let discr1 = Math.pow(b - 1, 2) - 4 * a * (c + d);
@@ -48,3 +44,15 @@ let result3 = countRoots(-1, discr3);
 console.log(result3);
 let result4 = countRoots(1, discr3);
 console.log(result4);
+}
+
+let a = 3;
+let b = 7;
+let c = 3;
+let d = 1;
+
+findCrossPoint(a,b,c,d);
+findCrossPoint(7,3,3,1);
+
+//export default findCrossPoint;
+
